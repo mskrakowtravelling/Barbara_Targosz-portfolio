@@ -18,8 +18,9 @@ body {
     background-color: #FFF8ED;
 }
 
-/* .navbar {
-    background-color: #D9D9D9;
+.navbar {
+    /* background-color: #D9D9D9; */
+    background-color: #515E63;
 }
 
 .navbar .active {
@@ -27,9 +28,24 @@ body {
 }
 
 .nav-link {
+    /* color: #2E382E; */
+    color: #D9D9D9;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    background-color: #D9D9D9;
     color: #2E382E;
-    font-size: 24px;
-} */
+    border-radius: 5px;
+}
+
+.navbar-brand:hover {
+    background-color: #2E382E;
+    border-radius: 5px;
+}
+
+
 
 
 h1,
@@ -58,6 +74,10 @@ h1 {
 
 h2 {
     font-size: 40px;
+}
+
+.content-wrapper {
+    margin-top: 40px;
 }
 
 .section-wrapper {

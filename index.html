@@ -28,11 +28,6 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
 
     <!-- CSS file --------------------------------------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="/src/style.css" />
@@ -40,9 +35,11 @@
   </head>
   <body>
     <!-- Navbar ======================================================================================================== -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <div class="container-fluid" max-width="90%">
+        <a class="navbar-brand" href="#"
+          ><img src="/images/logo-light.png" alt="logo" width="160px"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -74,7 +71,7 @@
     <h3>Ms Krakow, Traveling</h3>
     <div class="container">
       <div class="row gx-5">
-        <div class="col-md-6">
+        <div class="col-md-6 content-wrapper">
           <div class="row">
             <div class="col-md-12">
               <h2>About Me</h2>
@@ -82,14 +79,14 @@
           </div>
 
           <div class="row section-wrapper">
-            <div class="col-md-6 content-wrapper">
+            <div class="col-md-6 d-flex justify-content-center p-2">
               <img
                 class="img-fluid rounded"
                 src="/images/profile-pic.jpg"
                 alt="woman in green"
               />
             </div>
-            <div class="col-md-6 content-wrapper">
+            <div class="col-md-6">
               <p class="description">
                 Est voluptatibus error ut tempore voluptatem sit soluta numquam
                 et amet internos! Qui architecto praesentium id laborum placeat
@@ -99,14 +96,14 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 content-wrapper">
           <div class="row">
             <div class="col-md-12">
               <h2>Coding Projects</h2>
             </div>
           </div>
           <div class="row section-wrapper">
-            <div class="col-md-6 content-wrapper">
+            <div class="col-md-6">
               <p class="description">
                 Est voluptatibus error ut tempore voluptatem sit soluta numquam
                 et amet internos! Qui architecto praesentium id laborum placeat
@@ -114,7 +111,7 @@
                 soluta ducimus?
               </p>
             </div>
-            <div class="col-md-6 content-wrapper">
+            <div class="col-md-6 d-flex justify-content-center p-2">
               <img
                 class="img-fluid rounded"
                 src="/images/weather-app.png"
@@ -127,5 +124,20 @@
     </div>
 
     <a class="contact-button" href="#" title="contact me section">Contact Me</a>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
