@@ -91,17 +91,26 @@ p {
     margin-top: 40px;
 }
 
+.homepage .section-wrapper {
+    border: var(--wrapper-border);
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 362px;
+}
+
 .section-wrapper {
     border: var(--wrapper-border);
     border-radius: 5px;
     padding: 10px;
-    min-height: 85%;
-    /* align-items: center; */
 }
 
 .description {
     font-size: 18px;
 
+}
+
+.image-item {
+    text-align: center;
 }
 
 .contact-button {
@@ -146,9 +155,11 @@ a.contact-button:hover {
 }
 
 .about-section p {
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
+
 }
+
 
 .hobbies-section {
     margin: 50px 35px;
@@ -172,14 +183,14 @@ a.contact-button:hover {
     font-family: var(--decorative-font);
     color: var(--brand-color-dark);
     font-size: 35px;
-    padding-left: 40px;
+    text-align: center;
 }
 
 .hobby-column-wrap {
     padding: 10px;
 }
 
-.section-title-right {
+.section-title-dark {
     text-align: right;
 }
 
@@ -205,5 +216,13 @@ a.about-me:hover {
 
     h3 {
         font-size: 30px;
+    }
+}
+
+@media(max-width:770px) {
+
+    .section-title-light,
+    .section-title-dark {
+        text-align: center;
     }
 }
