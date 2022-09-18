@@ -126,7 +126,8 @@ a.contact-button:hover {
 
 /* About section -------------------------------------------------------------------------------- */
 .about-section {
-    margin: 0 90px;
+    padding: 0 90px 50px 90px;
+
 }
 
 .about-section h1 {
@@ -137,6 +138,7 @@ a.contact-button:hover {
 .about-section h3 {
     text-align: left;
     font-size: 36px;
+
 }
 
 .about-section div.row {
@@ -149,7 +151,7 @@ a.contact-button:hover {
 }
 
 .hobbies-section {
-    margin: 100px 35px;
+    margin: 50px 35px;
 
 }
 
@@ -157,14 +159,38 @@ a.contact-button:hover {
     font-size: 27px;
 }
 
-.hobby-title {
+.hobbies-section .dark {
+    background: var(--brand-color-light);
+    color: var(--contrast-color);
+}
+
+.hobbies-section h2 {
+    margin: 0 40px 5px;
+}
+
+.item-title {
     font-family: var(--decorative-font);
     color: var(--brand-color-dark);
     font-size: 35px;
+    padding-left: 40px;
 }
 
 .hobby-column-wrap {
-    padding-top: 30px;
+    padding: 10px;
+}
+
+.section-title-right {
+    text-align: right;
+}
+
+a.about-me {
+    text-decoration: none;
+    color: var(--brand-color-dark);
+    font-weight: 500;
+}
+
+a.about-me:hover {
+    color: var(--brand-color-light);
 }
 
 /* @Media-query----------------------------------------------------------------------------------------------------- */
