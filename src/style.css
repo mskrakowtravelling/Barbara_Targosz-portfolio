@@ -54,7 +54,7 @@ li.nav-item.active {
     font-weight: 500;
 }
 
-/* general --------------------------------------------------------------------------------------------------------- */
+/* general = fonts, colors & sizes --------------------------------------------------------------------------------------------------------- */
 h1,
 h3 {
     text-align: center;
@@ -62,13 +62,19 @@ h3 {
 
 h1,
 h2,
-p.description {
+p {
     font-family: var(--default-font);
     color: var(--brand-color-dark);
 }
 
-h1 {
-    font-size: 86px;
+h3 {
+    font-family: var(--decorative-font);
+    color: var(--brand-color-light);
+}
+
+h1,
+h3,
+p {
     margin: 0;
 }
 
@@ -76,41 +82,10 @@ h2 {
     font-size: 40px;
 }
 
-h3 {
-    font-family: var(--decorative-font);
-    font-size: 43px;
-    margin: 0;
-    color: var(--brand-color-light);
-}
-
-p {
-    margin: 0;
-}
-
-.content-wrapper {
-    margin-top: 40px;
-}
-
-.homepage .section-wrapper {
+.section-content-wrapper {
     border: var(--wrapper-border);
     border-radius: 5px;
     padding: 10px;
-    min-height: 362px;
-}
-
-.section-wrapper {
-    border: var(--wrapper-border);
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.description {
-    font-size: 18px;
-
-}
-
-.image-item {
-    text-align: center;
 }
 
 .contact-button {
@@ -118,7 +93,7 @@ p {
     background-color: var(--brand-color-light);
     padding: 10px 35px;
     max-width: fit-content;
-    margin: 50px auto;
+    margin: 50px auto 0;
     border: var(--wrapper-border);
     border-radius: 7px;
     font-family: var(--decorative-font);
@@ -133,10 +108,35 @@ a.contact-button:hover {
     background: var(--contrast-color);
 }
 
+/* Homepage section ------------------------------------------------------------------------------ */
+.homepage .section-content-wrapper {
+    min-height: 362px;
+}
+
+.homepage h1 {
+    font-size: 86px;
+}
+
+.homepage h3 {
+    font-size: 43px;
+}
+
+.homepage p {
+    font-size: 18px;
+}
+
 /* About section -------------------------------------------------------------------------------- */
+.about-main {
+    background: rgb(81, 94, 99, 0.5);
+    padding-bottom: 16px;
+}
+
+.image-item {
+    text-align: center;
+}
+
 .about-section {
     padding: 0 90px 50px 90px;
-
 }
 
 .about-section h1 {
@@ -156,18 +156,14 @@ a.contact-button:hover {
 
 .about-section p {
     font-size: 25px;
-    margin: 0;
-
 }
 
-
-.hobbies-section {
-    margin: 50px 35px;
-
+.about-section.contact-button {
+    margin: 50px auto 0px auto;
 }
 
 .hobbies-section p {
-    font-size: 27px;
+    font-size: 25px;
 }
 
 .hobbies-section .dark {
@@ -206,20 +202,23 @@ a.about-me:hover {
 
 /* @Media-query----------------------------------------------------------------------------------------------------- */
 @media(max-width:420px) {
-    h1 {
+    .homepage h1 {
         font-size: 60px;
     }
 
-    h2 {
+    .homepage h2 {
         font-size: 35px;
     }
 
-    h3 {
+    .homepage h3 {
         font-size: 30px;
     }
 }
 
 @media(max-width:770px) {
+    .section-content-wrapper {
+        min-height: 632px;
+    }
 
     .section-title-light,
     .section-title-dark {
