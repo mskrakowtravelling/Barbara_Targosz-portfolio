@@ -125,69 +125,24 @@ a.contact-button:hover {
     font-size: 18px;
 }
 
-/* About section -------------------------------------------------------------------------------- */
-.about-main {
-    background: rgb(81, 94, 99, 0.5);
-    padding-bottom: 16px;
+/* About section -------------------------------------------------------------------------------------- */
+/* heading ----------------------------------------------------------------------------------------- */
+.about h3 {
+    text-align: left;
+    font-size: 36px;
 }
 
-.image-item {
-    text-align: center;
-}
-
-.about-section {
+.about-heading {
     padding: 0 90px 50px 90px;
 }
 
-.about-section h1 {
+.about h1 {
     text-align: left;
     font-size: 86px;
 }
 
-.about-section h3 {
-    text-align: left;
-    font-size: 36px;
-
-}
-
-.about-section div.row {
-    margin-top: 50px;
-}
-
-.about-section p {
-    font-size: 25px;
-}
-
-.about-section.contact-button {
-    margin: 50px auto 0px auto;
-}
-
-.hobbies-section p {
-    font-size: 25px;
-}
-
-.hobbies-section .dark {
-    background: var(--brand-color-light);
-    color: var(--contrast-color);
-}
-
-.hobbies-section h2 {
-    margin: 0 40px 5px;
-}
-
-.item-title {
-    font-family: var(--decorative-font);
-    color: var(--brand-color-dark);
-    font-size: 35px;
-    text-align: center;
-}
-
-.hobby-column-wrap {
-    padding: 10px;
-}
-
-.section-title-dark {
-    text-align: right;
+.about-heading p {
+    font-size: 23px;
 }
 
 a.about-me {
@@ -198,6 +153,47 @@ a.about-me {
 
 a.about-me:hover {
     color: var(--brand-color-light);
+}
+
+
+/* hobbies ----------------------------------------------------------------------------------------- */
+.hobbies p {
+    font-size: 20px;
+}
+
+.section-title.light {
+    text-align: left;
+}
+
+.section-title.dark {
+    text-align: right;
+}
+
+.hobbies .section-content-wrapper {
+    padding: 15px 0;
+}
+
+.section-content-wrapper.dark {
+    background: var(--brand-color-light);
+}
+
+.dark p {
+    color: var(--contrast-color);
+}
+
+.item-title {
+    font-family: var(--decorative-font);
+    color: var(--brand-color-dark);
+    font-size: 35px;
+    text-align: center;
+}
+
+.item-title.dark {
+    color: var(--contrast-color);
+}
+
+.image-item {
+    text-align: center;
 }
 
 /* @Media-query----------------------------------------------------------------------------------------------------- */
@@ -216,12 +212,12 @@ a.about-me:hover {
 }
 
 @media(max-width:770px) {
-    .section-content-wrapper {
+    .homepage .section-content-wrapper {
         min-height: 632px;
     }
 
-    .section-title-light,
-    .section-title-dark {
+    .section-title.light,
+    .section-title.dark {
         text-align: center;
     }
 }
