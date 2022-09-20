@@ -22,7 +22,7 @@
 body {
     margin: 55px auto;
     background: var(--background-color);
-    max-width: 1500px;
+    /* max-width: 1500px; */
 }
 
 /* navbar ------------------------------------------------------------------------------------- */
@@ -89,6 +89,7 @@ hr {
 .heading {
     padding: 50px 90px;
     background: var(--contrast-color);
+    background-size: 100%;
 }
 
 .heading p {
