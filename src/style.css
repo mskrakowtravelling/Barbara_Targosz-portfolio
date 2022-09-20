@@ -50,8 +50,8 @@ li.nav-item {
     border-radius: 5px;
 }
 
-li.nav-item.active {
-    font-weight: 500;
+.nav-item.active a {
+    font-weight: 400;
 }
 
 /* general = fonts, colors & sizes --------------------------------------------------------------------------------------------------------- */
