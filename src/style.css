@@ -20,7 +20,7 @@
 }
 
 body {
-    margin: 100px auto;
+    margin: 55px auto;
     background: var(--background-color);
     max-width: 1500px;
 }
@@ -82,17 +82,26 @@ h2 {
     font-size: 40px;
 }
 
+hr {
+    margin: 0;
+}
+
+.heading {
+    padding: 50px 90px;
+    background: var(--contrast-color);
+}
+
+.heading p {
+    font-size: 18px;
+    /* padding: 30px; */
+}
+
 .section-content-wrapper {
     border: var(--wrapper-border);
     border-radius: 5px;
     padding: 10px;
 }
 
-.heading-dark {
-    background: var(--contrast-color);
-    color: var(--brand-color-dark);
-    padding: 15px;
-}
 
 .contact-button {
     display: flex;
@@ -131,6 +140,7 @@ a.dark-link:hover {
 
 .homepage h1 {
     font-size: 86px;
+    padding-top: 55px;
 }
 
 .homepage h3 {
@@ -139,7 +149,6 @@ a.dark-link:hover {
 
 .homepage p {
     font-size: 18px;
-    text-align: justify;
 }
 
 /* About section -------------------------------------------------------------------------------------- */
@@ -150,9 +159,6 @@ a.dark-link:hover {
     font-size: 36px;
 }
 
-.about-heading {
-    padding: 0 90px 50px 90px;
-}
 
 .about h1,
 .coding h1 {
@@ -160,9 +166,7 @@ a.dark-link:hover {
     font-size: 86px;
 }
 
-.about-heading p {
-    font-size: 23px;
-}
+
 
 a.about-me {
     text-decoration: none;
@@ -176,8 +180,11 @@ a.about-me:hover {
 
 
 /* hobbies ----------------------------------------------------------------------------------------- */
-.hobbies p {
-    font-size: 20px;
+.hobbies p,
+.projects p {
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
 }
 
 .section-title.light {
@@ -221,10 +228,6 @@ a.about-me:hover {
 }
 
 /* projects --------------------------------------------------------------------------------------------------------- */
-.projects p {
-    font-size: 25px;
-}
-
 .wrapped-img {
     max-width: 300px;
 }
@@ -244,7 +247,7 @@ a.about-me:hover {
     }
 }
 
-@media(max-width:770px) {
+@media(max-width:980px) {
     .homepage .section-content-wrapper {
         min-height: 632px;
     }
