@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocora Valley</title>
+    <style>
+      body {
+        margin: 0%;
+      }
+      h1 {
+        text-align: center;
+        color: #004a2f;
+        font-size: 50px;
+        font-weight: 900px;
+        font-family: monospace;
+        padding: 30px 20px 0 20px;
+      }
+      h2 {
+        font-family: monospace;
+        font-size: 28px;
+        text-align: center;
+        color: #379956;
+        line-height: 30px;
+      }
+      img {
+        display: block;
+        margin: 0px auto;
+        padding: 20px;
+        width: 600px;
+        border-radius: 10%;
+      }
+      p {
+        font-size: 18px;
+        text-align: justify;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      a {
+        text-align: center;
+        text-decoration: none;
+        color: #004a2f;
+        display: block;
+        font-size: 18px;
+        line-height: 20px;
+        transition: all 200ms ease-in-out;
+        margin: 10px auto;
+      }
+      a:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
+      ul {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+        text-align: left;
+        font-size: 22px;
+      }
+      li {
+        list-style-type: none;
+      }
+      li:before {
+        content: "\1f334";
+        margin-left: -20px;
+        margin-right: 10px;
+      }
+      button {
+        display: block;
+        margin: 30px auto 0px auto;
+        color: white;
+        background: #004a2f;
+        border: 1px solid #004a2f;
+        border-radius: 30px;
+        font-size: 18px;
+        padding: 15px 20px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 2px 5px 5px rgb(0 0 0 / 20%);
+      }
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .general {
+        background: linear-gradient(to top, white 0%, #dfe9f3 100%);
+        padding: 15px 0 0 0;
+      }
+      .activities {
+        background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+        padding: 0 0 15px 0;
+        margin: 0;
+      }
+      .spanish {
+        font-style: italic;
+        color: #379956;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="general">
+      <h1>Cocora Valley</h1>
+      <em><h2>A gem of Colombia’s Coffee Region</h2></em>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/478/original/cocora.jpg?1651705472"
+        max
+        alt="wax palm trees"
+        width="300px"
+      />
+      <p>
+        The Cocora valley
+        <span class="spanish"> (Spanish: Valle de Cocora) </span> is a valley in
+        the Quindío Department of Colombia. It is located in the Central
+        Cordillera of the Andean mountains. "Cocora" was the name of a Quimbayan
+        princess, daughter of the local chief Acaime, and means "star of water"
+        <span class="spanish"> (Spanish: estrella de agua)</span>. <br /><br />
+        The valley is part of the Los Nevados National Natural Park,
+        incorporated into the existing national park by the Colombian government
+        in 1985. It is the main location where the national tree of Colombia,
+        the Quindío wax palm can be found, as well as a wide variety of other
+        flora and fauna (some endangered), all of which are protected under the
+        park's national status.
+      </p>
+      <strong
+        ><a href="https://en.wikipedia.org/wiki/Cocora_Valley" target="_blank">
+          Learn more about Cocora Valley
+        </a></strong
+      >
+    </div>
+    <div class="activities">
+      <hr />
+
+      <h2>What to do in Cocora Valley?</h2>
+      <ul>
+        <li>Visit view points</li>
+        <li>Do the hike of Cocora Valley</li>
+        <li>Visit Finca Acaime</li>
+        <li>Visit the closest coffee town - Salento</li>
+      </ul>
+      <button>Sign up for more tips!</button>
+    </div>
+
+    <script>
+      function signUp() {
+        let language = prompt("What language do you speak?");
+        language = language.trim();
+        language = language.toLowerCase();
+        language = language.replace("espanol", "spanish");
+        language = language.replace("español", "spanish");
+
+        if (language === "spanish") {
+          let spanishName = prompt("Cuál es tu nombre?");
+          let spanishEmail = prompt("Cuál es tu correo electrónico?");
+          let messageSpanish =
+            "Hola " +
+            spanishName +
+            ", gracias por inscribirte! Estamos en contacto!";
+          alert(messageSpanish);
+        } else {
+          let englishName = prompt("What's your name?");
+          let englishEmail = prompt("What's your email address?");
+          let messageEnglish =
+            "Hi " + englishName + ", thanks for signing up! We'll be in touch!";
+          alert(messageEnglish);
+        }
+      }
+
+      let signUpButton = document.querySelector("button");
+      signUpButton.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>

@@ -87,14 +87,14 @@ hr {
 }
 
 .heading {
-    padding: 50px 90px;
+    padding: 50px 130px;
     background: var(--contrast-color);
     background-size: 100%;
 }
 
 .heading p {
     font-size: 18px;
-    /* padding: 30px; */
+    padding: 50px;
 }
 
 .section-content-wrapper {
@@ -181,6 +181,10 @@ a.about-me:hover {
 
 
 /* hobbies ----------------------------------------------------------------------------------------- */
+.hobbies {
+    padding: 0 90px;
+}
+
 .hobbies p,
 .projects p {
     font-size: 18px;
@@ -228,14 +232,27 @@ a.about-me:hover {
     font-size: 76px;
 }
 
+.coding .heading .row {
+    margin-top: 50px;
+}
+
 /* projects --------------------------------------------------------------------------------------------------------- */
+.weather-app,
+.landing-page {
+    margin-top: 50px;
+    padding: 0 90px;
+}
+
 .wrapped-img {
     max-width: 300px;
 }
 
 /* @Media-query----------------------------------------------------------------------------------------------------- */
 @media(max-width:420px) {
-    .homepage h1 {
+
+    .homepage h1,
+    .about h1,
+    .coding h1 {
         font-size: 60px;
     }
 
@@ -243,8 +260,14 @@ a.about-me:hover {
         font-size: 35px;
     }
 
-    .homepage h3 {
+    .homepage h3,
+    .about h3,
+    .coding h3 {
         font-size: 30px;
+    }
+
+    .hobbies {
+        padding: 0;
     }
 }
 
@@ -253,8 +276,37 @@ a.about-me:hover {
         min-height: 632px;
     }
 
+    .heading {
+        padding: 50px 10px 0;
+    }
+
+    .heading p {
+        padding: 0;
+    }
+
     .section-title.light,
     .section-title.dark {
         text-align: center;
     }
+
+    .about h1,
+    .coding h1,
+    .about h3,
+    .coding h3 {
+        text-align: center;
+    }
+
+    .coding .heading p {
+        padding: 10px 0;
+    }
+
+    .projects {
+        padding: 0;
+    }
+
+    .weather-app,
+    .landing-page {
+        padding: 0;
+    }
+
 }
