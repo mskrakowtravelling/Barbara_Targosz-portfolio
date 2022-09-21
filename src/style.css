@@ -99,7 +99,7 @@ hr {
 
 .section-content-wrapper {
     border: var(--wrapper-border);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
 }
 
@@ -169,13 +169,13 @@ a.dark-link:hover {
 
 
 
-a.about-me {
+a.intertext-link {
     text-decoration: none;
     color: var(--brand-color-dark);
     font-weight: 600;
 }
 
-a.about-me:hover {
+a.intertext-link:hover {
     color: var(--brand-color-light);
 }
 
@@ -236,6 +236,7 @@ a.about-me:hover {
     margin-top: 50px;
 }
 
+
 /* projects --------------------------------------------------------------------------------------------------------- */
 .weather-app,
 .landing-page {
@@ -245,6 +246,25 @@ a.about-me:hover {
 
 .wrapped-img {
     max-width: 300px;
+}
+
+a.project-link {
+    text-decoration: none;
+    color: var(--brand-color-dark);
+}
+
+a.project-link:hover {
+    color: var(--brand-color-light);
+    font-size: 45px;
+}
+
+/* .project-img-link {
+    max-width: 400px;
+
+} */
+
+.project-img-link:hover {
+    transform: scale(1.06, 1.06);
 }
 
 /* @Media-query----------------------------------------------------------------------------------------------------- */
@@ -298,6 +318,10 @@ a.about-me:hover {
 
     .coding .heading p {
         padding: 10px 0;
+    }
+
+    .coding p {
+        padding: 10px 0 0;
     }
 
     .projects {
