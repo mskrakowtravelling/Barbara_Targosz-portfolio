@@ -17,6 +17,7 @@
     --brand-color-light: #515E63;
     --background-color: #FFF8ED;
     --contrast-color: #D9D9D9;
+    --box-shadow-main: 10px -10px 20px rgba(46, 56, 46, 0.4);
 }
 
 body {
@@ -90,10 +91,14 @@ hr {
 
 .heading,
 footer {
-    padding: 50px 130px;
+
     background: var(--contrast-color);
     background-size: 100%;
     margin: 0
+}
+
+.heading {
+    padding: 50px 130px;
 }
 
 .heading p {
@@ -114,7 +119,7 @@ footer {
     background-color: var(--brand-color-light);
     padding: 10px 35px;
     max-width: fit-content;
-    margin: 50px auto 0;
+    margin: 30px auto;
     border: var(--wrapper-border);
     border-radius: 7px;
     font-family: var(--decorative-font);
@@ -139,6 +144,28 @@ a.dark-link:hover {
     color: var(--brand-color-dark);
 }
 
+/* Footer -------------------------------------------------------------------- */
+footer p {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: var(--brand-color-dark);
+}
+
+a.email-address {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 36px;
+    color: var(--brand-color-dark)
+}
+
+a.email-address:hover {
+    color: var(--brand-color-dark);
+    text-decoration: underline;
+    font-size: 38px;
+}
+
 footer .social-links {
     display: flex;
     justify-content: space-around;
@@ -146,28 +173,34 @@ footer .social-links {
     font-size: 25px;
     padding: 14px 15px;
     border-radius: 50%;
-    color: var(--brand-color-dark);
     text-decoration: none;
+    color: var(--brand-color-dark);
 }
 
 footer .social-links:hover {
     background-color: var(--background-color);
+    text-decoration: none;
+    font-size: 27px;
 }
 
 .signature p {
     text-align: center;
-    margin: 20px 0;
-    padding: 0;
+    padding: 20px 0 0;
     font-size: 14px;
-    color: var(--brand-color-dark);
     font-family: var(--decorative-font);
     font-weight: 300;
+    color: var(--brand-color-light);
 }
 
 /* Homepage section ------------------------------------------------------------------------------ */
+.intro,
+.frontend-developer,
+.contact-me {
+    padding: 50px 130px;
+}
+
 .homepage h1 {
     font-size: 86px;
-    padding-top: 55px;
 }
 
 .homepage h3 {
@@ -176,11 +209,8 @@ footer .social-links:hover {
 
 .homepage p {
     font-size: 18px;
-}
-
-.intro {
-    width: 100%;
-    padding: 50px 130px;
+    padding: 0 20px;
+    margin: 0 80px;
 }
 
 .frontend-developer {
@@ -188,6 +218,11 @@ footer .social-links:hover {
     width: 100%;
     padding: 50px 130px;
 
+}
+
+/* Contact me section */
+.contact-me h2 {
+    font-size: 60px;
 }
 
 /* About section -------------------------------------------------------------------------------------- */
@@ -205,8 +240,8 @@ footer .social-links:hover {
     font-size: 86px;
 }
 
-.about .profile-picture {
-    box-shadow: 10px -10px 20px rgba(46, 56, 46, 0.4);
+.profile-picture {
+    box-shadow: var(--box-shadow-main);
     border-radius: 5px;
 }
 
@@ -219,6 +254,7 @@ a.intertext-link {
 a.intertext-link:hover {
     color: var(--brand-color-light);
 }
+
 
 
 /* hobbies ----------------------------------------------------------------------------------------- */
@@ -341,14 +377,14 @@ a.project-link:hover {
         font-size: 60px;
     }
 
-    .homepage h2 {
-        font-size: 35px;
-    }
-
     .homepage h3,
     .about h3,
     .coding h3 {
         font-size: 30px;
+    }
+
+    .contact-button {
+        font-size: 35px;
     }
 
     .hobbies {
@@ -359,21 +395,46 @@ a.project-link:hover {
         font-size: 11px;
         margin-top: 0;
     }
+
+    a.email-address {
+        font-size: 30px;
+
+    }
+
+    a.email-address:hover {
+        color: var(--brand-color-dark);
+        text-decoration: underline;
+        font-size: 30px;
+    }
 }
 
 @media(max-width:980px) {
-    .homepage .section-content-wrapper {
-        min-height: 632px;
-    }
+
 
     .heading {
-        padding: 50px 10px 0;
+        padding: 50px 10px 20px;
     }
-
-
 
     .heading p {
         padding: 0;
+    }
+
+    .frontend-developer,
+    .intro {
+        padding: 15px
+    }
+
+    .homepage h2 {
+        font-size: 35px;
+    }
+
+    .homepage p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-me {
+        padding: 30px 20px;
     }
 
     .section-title.light,
@@ -381,12 +442,15 @@ a.project-link:hover {
         text-align: center;
     }
 
+    .homepage h2,
     .about h1,
     .coding h1,
     .about h3,
     .coding h3 {
         text-align: center;
     }
+
+
 
     .coding .heading p {
         padding: 10px 0;
