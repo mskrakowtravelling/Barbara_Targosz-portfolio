@@ -20,7 +20,7 @@
 }
 
 body {
-    margin: 55px auto;
+    margin: 55px auto 0;
     background: var(--background-color);
     /* max-width: 1500px; */
 }
@@ -28,6 +28,8 @@ body {
 /* navbar ------------------------------------------------------------------------------------- */
 .navbar {
     background: var(--brand-color-light);
+    box-shadow: 1px 1px 20px rgba(217, 217, 217, 0.7);
+    ;
 }
 
 .navbar-brand:hover {
@@ -86,10 +88,12 @@ hr {
     margin: 0;
 }
 
-.heading {
+.heading,
+footer {
     padding: 50px 130px;
     background: var(--contrast-color);
     background-size: 100%;
+    margin: 0
 }
 
 .heading p {
@@ -134,11 +138,32 @@ a.dark-link:hover {
     color: var(--brand-color-dark);
 }
 
-/* Homepage section ------------------------------------------------------------------------------ */
-.homepage .section-content-wrapper {
-    min-height: 362px;
+footer .social-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 15px 0;
+    font-size: 25px;
+    padding: 14px 15px;
+    border-radius: 50%;
+    color: var(--brand-color-dark);
+    text-decoration: none;
 }
 
+footer .social-links:hover {
+    background-color: var(--background-color);
+}
+
+.signature p {
+    text-align: center;
+    margin: 20px 0;
+    padding: 0;
+    font-size: 14px;
+    color: var(--brand-color-dark);
+    font-family: var(--decorative-font);
+    font-weight: 300;
+}
+
+/* Homepage section ------------------------------------------------------------------------------ */
 .homepage h1 {
     font-size: 86px;
     padding-top: 55px;
@@ -150,6 +175,18 @@ a.dark-link:hover {
 
 .homepage p {
     font-size: 18px;
+}
+
+.intro {
+    width: 100%;
+    padding: 50px 130px;
+}
+
+.frontend-developer {
+    background-color: var(--contrast-color);
+    width: 100%;
+    padding: 50px 130px;
+
 }
 
 /* About section -------------------------------------------------------------------------------------- */
@@ -167,7 +204,10 @@ a.dark-link:hover {
     font-size: 86px;
 }
 
-
+.about .profile-picture {
+    box-shadow: 10px -10px 20px rgba(46, 56, 46, 0.4);
+    border-radius: 5px;
+}
 
 a.intertext-link {
     text-decoration: none;
@@ -225,6 +265,10 @@ a.intertext-link:hover {
 
 .image-item {
     text-align: center;
+}
+
+.testt {
+    align-items: center;
 }
 
 /* coding ----------------------------------------------------------------------------------------------------------- */
@@ -289,6 +333,11 @@ a.project-link:hover {
     .hobbies {
         padding: 0;
     }
+
+    .signature p {
+        font-size: 11px;
+        margin-top: 0;
+    }
 }
 
 @media(max-width:980px) {
@@ -299,6 +348,8 @@ a.project-link:hover {
     .heading {
         padding: 50px 10px 0;
     }
+
+
 
     .heading p {
         padding: 0;
@@ -333,4 +384,7 @@ a.project-link:hover {
         padding: 0;
     }
 
+    footer {
+        padding: 10px;
+    }
 }
