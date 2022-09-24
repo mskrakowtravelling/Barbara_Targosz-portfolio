@@ -99,6 +99,7 @@ footer {
 .heading p {
     font-size: 18px;
     padding: 50px;
+    text-align: center;
 }
 
 .section-content-wrapper {
@@ -265,11 +266,31 @@ a.intertext-link:hover {
 
 .image-item {
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.testt {
-    align-items: center;
+.img-title-top {
+    box-shadow: -10px 10px 10px rgba(46, 56, 46, 0.4);
 }
+
+.img-title-bottom {
+    box-shadow: -10px -10px 10px rgba(46, 56, 46, 0.4);
+}
+
+.img-title-bottom,
+.img-title-top {
+    border-radius: 5px;
+}
+
+.dark .img-title-top {
+    box-shadow: -10px 10px 10px rgba(46, 56, 46, 0.7);
+}
+
+.dark .img-title-bottom {
+    box-shadow: -10px -10px 10px rgba(46, 56, 46, 0.7);
+}
+
 
 /* coding ----------------------------------------------------------------------------------------------------------- */
 .coding h1 {
