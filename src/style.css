@@ -145,11 +145,16 @@ a.dark-link:hover {
 }
 
 /* Footer -------------------------------------------------------------------- */
+footer {
+    padding: 20px;
+}
+
 footer p {
     display: block;
     text-align: center;
     font-size: 24px;
     color: var(--brand-color-dark);
+
 }
 
 a.email-address {
@@ -218,6 +223,10 @@ footer .social-links:hover {
     width: 100%;
     padding: 50px 130px;
 
+}
+
+a .profile-picture:hover {
+    transform: scale(1.06, 1.06);
 }
 
 /* Contact me section */
