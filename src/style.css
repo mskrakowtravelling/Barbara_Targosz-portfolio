@@ -232,7 +232,8 @@ a .profile-picture:hover {
 /* Contact me section */
 .contact-me h2 {
     font-size: 65px;
-    padding-bottom: 30px;
+
+    text-align: center
 }
 
 .contact-me h3 {
@@ -244,21 +245,57 @@ a .profile-picture:hover {
     margin: 0;
     color: var(--brand-color-dark);
     font-size: 24px;
-    max-width: 300px;
 }
 
 .contact-me a {
     text-decoration: none;
-
     font-size: 38px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: var(--brand-color-dark);
+}
+
+.contact-me i {
+    font-size: 90px;
+    color: var(--brand-color-dark);
+}
+
+.linkedin-icon,
+.preply-icon {
+    background: var(--background-color);
+    border-radius: 50%;
+    box-shadow: 15px -5px 20px rgba(46, 56, 46, 0.4);
+}
+
+a.linkedin-icon:hover,
+a.preply-icon:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.linkedin-icon {
+    padding: 25px 30px;
+}
+
+.preply-icon {
+    padding: 25px 22px;
+}
+
+.icon-wrapper {
+    /* background: var(--contrast-color); */
+    max-width: 300px;
+    padding: 20px 0;
+    border-radius: 5px;
 }
 
 h3.email-address {
     font-size: 36px;
     padding-top: 30px;
 }
+
+.e-address {
+    display: block;
+}
+
+
 
 
 /* About section -------------------------------------------------------------------------------------- */
@@ -481,6 +518,10 @@ a.project-link:hover {
 
     .contact-me a {
         font-size: 30px;
+    }
+
+    .contact-me p {
+        font-size: 20px;
     }
 
     .section-title.light,
