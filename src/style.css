@@ -152,7 +152,7 @@ footer {
 footer p {
     display: block;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     color: var(--brand-color-dark);
 
 }
@@ -192,7 +192,7 @@ footer .social-links:hover {
 .signature p {
     text-align: center;
     padding: 20px 0 0;
-    font-size: 14px;
+    font-size: 18px;
     font-family: var(--decorative-font);
     font-weight: 300;
     color: var(--brand-color-light);
@@ -553,8 +553,12 @@ a.project-link:hover {
         padding: 0;
     }
 
+    footer p {
+        font-size: 24px;
+    }
+
     .signature p {
-        font-size: 11px;
+        font-size: 14px;
         margin-top: 0;
     }
 
