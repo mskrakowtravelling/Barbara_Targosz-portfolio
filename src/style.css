@@ -478,7 +478,7 @@ a.project-link:hover {
     a.email-address:hover {
         color: var(--brand-color-dark);
         text-decoration: underline;
-        font-size: 30px;
+        font-size: 28px;
     }
 
 
