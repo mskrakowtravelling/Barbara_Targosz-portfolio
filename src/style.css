@@ -198,6 +198,14 @@ footer .social-links:hover {
     color: var(--brand-color-light);
 }
 
+.signature a {
+    color: var(--brand-color-light);
+}
+
+.signature a:hover {
+    color: var(--brand-color-dark);
+}
+
 /* Homepage section ------------------------------------------------------------------------------ */
 .intro,
 .frontend-developer,
