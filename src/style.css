@@ -443,46 +443,7 @@ a.project-link:hover {
 }
 
 /* @Media-query----------------------------------------------------------------------------------------------------- */
-@media(max-width:420px) {
 
-    .homepage h1,
-    .about h1,
-    .coding h1 {
-        font-size: 60px;
-    }
-
-    .homepage h3,
-    .about h3,
-    .coding h3 {
-        font-size: 30px;
-    }
-
-    .contact-button {
-        font-size: 35px;
-    }
-
-    .hobbies {
-        padding: 0;
-    }
-
-    .signature p {
-        font-size: 11px;
-        margin-top: 0;
-    }
-
-    a.email-address {
-        font-size: 28px;
-
-    }
-
-    a.email-address:hover {
-        color: var(--brand-color-dark);
-        text-decoration: underline;
-        font-size: 28px;
-    }
-
-
-}
 
 @media(max-width:980px) {
 
@@ -517,9 +478,9 @@ a.project-link:hover {
         font-size: 28px;
     }
 
-    .contact-me a {
+    /* .contact-me a {
         font-size: 30px;
-    }
+    } */
 
     .contact-me p {
         font-size: 20px;
@@ -560,4 +521,46 @@ a.project-link:hover {
     footer {
         padding: 10px;
     }
+}
+
+@media(max-width:420px) {
+
+    .homepage h1,
+    .about h1,
+    .coding h1 {
+        font-size: 60px;
+    }
+
+    .homepage h3,
+    .about h3,
+    .coding h3 {
+        font-size: 30px;
+    }
+
+    .contact-button {
+        font-size: 35px;
+    }
+
+    .hobbies {
+        padding: 0;
+    }
+
+    .signature p {
+        font-size: 11px;
+        margin-top: 0;
+    }
+
+    a.email-address,
+    a.e-address {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    a.email-address:hover {
+        color: var(--brand-color-dark);
+        text-decoration: underline;
+        font-size: 28px;
+    }
+
+
 }
