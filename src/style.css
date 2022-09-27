@@ -263,6 +263,11 @@ a .profile-picture:hover {
     color: var(--brand-color-dark);
 }
 
+.contact-me a:hover {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
 .contact-me i {
     font-size: 90px;
     color: var(--brand-color-dark);
@@ -419,6 +424,9 @@ a.intertext-link:hover {
     margin-top: 50px;
 }
 
+.certificate {
+    box-shadow: var(--box-shadow-main);
+}
 
 /* projects --------------------------------------------------------------------------------------------------------- */
 .weather-app,
@@ -441,13 +449,14 @@ a.project-link:hover {
     font-size: 45px;
 }
 
-/* .project-img-link {
-    max-width: 400px;
+.project-img-link {
+    box-shadow: var(--box-shadow-main);
 
-} */
+}
 
 .project-img-link:hover {
     transform: scale(1.06, 1.06);
+
 }
 
 /* @Media-query----------------------------------------------------------------------------------------------------- */
@@ -568,7 +577,8 @@ a.project-link:hover {
         text-align: center;
     }
 
-    a.email-address:hover {
+    a.email-address:hover,
+    a.e-address:hover {
         color: var(--brand-color-dark);
         text-decoration: underline;
         font-size: 28px;
