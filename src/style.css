@@ -132,6 +132,8 @@ a.contact-button:hover {
     color: var(--brand-color-dark);
     border: var(--wrapper-border);
     background: var(--contrast-color);
+    padding: 12px 37px;
+    font-size: 45px;
 }
 
 a.dark-link {
