@@ -28,12 +28,13 @@ body {
 
 /* navbar ------------------------------------------------------------------------------------- */
 .navbar {
-    background: var(--brand-color-light);
+    background: var(--brand-color-dark);
     box-shadow: 1px 1px 20px rgba(217, 217, 217, 0.7);
     ;
 }
 
-.navbar-brand:hover {
+.navbar-brand:hover,
+.navbar-brand:focus {
     background: var(--brand-color-dark);
     border-radius: 5px;
     padding: 5px;
@@ -47,7 +48,8 @@ li.nav-item {
     font-weight: 300;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
     background: var(--contrast-color);
     color: var(--brand-color-dark);
     border-radius: 5px;
@@ -98,13 +100,13 @@ footer {
 }
 
 .heading {
-    padding: 50px 130px;
+    padding: 250px 130px;
 }
 
 .heading p {
     font-size: 18px;
-    padding: 50px;
-    text-align: center;
+    /* padding: 50px; */
+
 }
 
 .section-content-wrapper {
@@ -128,7 +130,8 @@ footer {
     text-decoration: none;
 }
 
-a.contact-button:hover {
+a.contact-button:hover,
+a.contact-button:focus {
     color: var(--brand-color-dark);
     border: var(--wrapper-border);
     background: var(--contrast-color);
@@ -142,7 +145,8 @@ a.dark-link {
     color: var(--contrast-color);
 }
 
-a.dark-link:hover {
+a.dark-link:hover,
+a.dark-link:focus {
     color: var(--brand-color-dark);
 }
 
@@ -168,7 +172,8 @@ a.email-address {
     color: var(--brand-color-dark)
 }
 
-a.email-address:hover {
+a.email-address:hover,
+a.email-address:focus {
     color: var(--brand-color-dark);
     text-decoration: underline;
     font-size: 38px;
@@ -185,7 +190,8 @@ footer .social-links {
     color: var(--brand-color-dark);
 }
 
-footer .social-links:hover {
+footer .social-links:hover,
+footer .social-links:focus {
     background-color: var(--background-color);
     text-decoration: none;
     font-size: 27px;
@@ -204,7 +210,8 @@ footer .social-links:hover {
     color: var(--brand-color-light);
 }
 
-.signature a:hover {
+.signature a:hover,
+.signature a:focus {
     color: var(--brand-color-dark);
 }
 
@@ -224,9 +231,9 @@ footer .social-links:hover {
 }
 
 .homepage p {
-    font-size: 18px;
-    padding: 0 20px;
-    margin: 0 80px;
+    font-size: 20px;
+    padding: 0 10px;
+    margin: 0 16px;
 }
 
 .frontend-developer {
@@ -265,7 +272,8 @@ a .profile-picture:hover {
     color: var(--brand-color-dark);
 }
 
-.contact-me a:hover {
+.contact-me a:hover,
+.contact-me a:focus {
     font-size: 40px;
     text-decoration: underline;
 }
@@ -283,7 +291,9 @@ a .profile-picture:hover {
 }
 
 a.linkedin-icon:hover,
-a.preply-icon:hover {
+a.preply-icon:hover,
+a.linkedin-icon:focus,
+a.preply-icon:focus {
     transform: scale(1.2, 1.2);
 }
 
@@ -332,6 +342,7 @@ h3.email-address {
 .profile-picture {
     box-shadow: var(--box-shadow-main);
     border-radius: 5px;
+    /* max-width: 300px; */
 }
 
 a.intertext-link {
