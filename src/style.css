@@ -247,13 +247,19 @@ footer .social-links:focus {
 
 }
 
+img.frontend-developer:hover,
+img.frontend-developer:focus {
+    transform: scale(1.06, 1.06);
+}
+
 .profile-picture {
     box-shadow: var(--box-shadow-main);
     border-radius: 5px;
     max-width: 250px;
 }
 
-a .profile-picture:hover {
+img.projects:hover,
+img.projects:focus {
     transform: scale(1.06, 1.06);
 }
 
