@@ -7,3 +7,4 @@ Future changes:
 - changing logo 
 - adding more detail to "About Me" section
 - Changing "Contact Me" section
+- add form to Cocora Valley section
