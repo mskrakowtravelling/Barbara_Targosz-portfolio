@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="IAn example of a landing page - the first coding project of Barbara Targosz, part of a basic coding workshop by SheCodes."
-    />
+      content="IAn example of a landing page - the first coding project of Barbara Targosz, part of a basic coding workshop by SheCodes." />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
     <title>Cocora Valley</title>
     <style>
       body {
-        margin: 0%;
+        margin: 0 auto;
+        background: linear-gradient(to top, white 0%, #dfe9f3 100%);
+        padding: 30px;
       }
       h1 {
         text-align: center;
@@ -25,14 +31,13 @@
         font-family: monospace;
         font-size: 28px;
         text-align: center;
-        color: #379956;
+        color: #376d41;
         line-height: 30px;
       }
       img {
         display: block;
         margin: 0px auto;
         padding: 20px;
-        width: 600px;
         border-radius: 10%;
       }
       p {
@@ -86,11 +91,11 @@
         opacity: 0.8;
         cursor: pointer;
       }
-
-      .general {
-        background: linear-gradient(to top, white 0%, #dfe9f3 100%);
-        padding: 15px 0 0 0;
+      .image {
+        max-width: 600px;
+        margin: 0 auto;
       }
+
       .activities {
         background: linear-gradient(to top, #dfe9f3 0%, white 100%);
         padding: 0 0 25px;
@@ -119,19 +124,23 @@
     <div class="general">
       <h1>Cocora Valley</h1>
       <em><h2>A gem of Colombia’s Coffee Region</h2></em>
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/478/original/cocora.jpg?1651705472"
-        max
-        alt="wax palm trees"
-        width="300px"
-      />
+      <div class="image">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/478/original/cocora.jpg?1651705472"
+          class="img-fluid"
+          alt="wax palm trees"
+          max-width="600" />
+      </div>
+
       <p>
         The Cocora valley
-        <span class="spanish"> (Spanish: Valle de Cocora) </span> is a valley in
-        the Quindío Department of Colombia. It is located in the Central
-        Cordillera of the Andean mountains. "Cocora" was the name of a Quimbayan
-        princess, daughter of the local chief Acaime, and means "star of water"
-        <span class="spanish"> (Spanish: estrella de agua)</span>. <br /><br />
+        <span lang="”es”" class="spanish"> (Spanish: Valle de Cocora) </span> is
+        a valley in the Quindío Department of Colombia. It is located in the
+        Central Cordillera of the Andean mountains. "Cocora" was the name of a
+        Quimbayan princess, daughter of the local chief Acaime, and means "star
+        of water"
+        <span lang="”es”" class="spanish"> (Spanish: estrella de agua)</span>.
+        <br /><br />
         The valley is part of the Los Nevados National Natural Park,
         incorporated into the existing national park by the Colombian government
         in 1985. It is the main location where the national tree of Colombia,
@@ -197,5 +206,9 @@
       let signUpButton = document.querySelector("button");
       signUpButton.addEventListener("click", signUp);
     </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
   </body>
 </html>
