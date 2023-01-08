@@ -75,10 +75,10 @@ p {
 h3 {
     font-family: var(--decorative-font);
     color: var(--brand-color-light);
+    margin-bottom: 50px;
 }
 
 h1,
-h3,
 p {
     margin: 0;
 }
@@ -99,15 +99,19 @@ footer {
     margin: 0
 }
 
+.heading h3 {
+    margin: 10px 0;
+}
+
 .heading {
-    padding: 250px 130px;
+    padding: 200px 130px;
 }
 
 .heading p {
     font-size: 18px;
     /* padding: 50px; */
-
 }
+
 
 .section-content-wrapper {
     border: var(--wrapper-border);
@@ -121,7 +125,7 @@ footer {
     background-color: var(--brand-color-light);
     padding: 10px 35px;
     max-width: fit-content;
-    margin: 30px auto 0;
+    margin: 50px auto 0;
     border: var(--wrapper-border);
     border-radius: 7px;
     font-family: var(--decorative-font);
