@@ -231,9 +231,9 @@ footer .social-links:focus {
 }
 
 .homepage p {
-    font-size: 20px;
+    font-size: 18px;
     padding: 0 10px;
-    margin: 0 16px;
+    margin: 0 10px;
 }
 
 .frontend-developer {
@@ -241,6 +241,12 @@ footer .social-links:focus {
     width: 100%;
     padding: 50px 130px;
 
+}
+
+.profile-picture {
+    box-shadow: var(--box-shadow-main);
+    border-radius: 5px;
+    max-width: 250px;
 }
 
 a .profile-picture:hover {
@@ -339,11 +345,7 @@ h3.email-address {
     font-size: 86px;
 }
 
-.profile-picture {
-    box-shadow: var(--box-shadow-main);
-    border-radius: 5px;
-    /* max-width: 300px; */
-}
+
 
 a.intertext-link {
     text-decoration: none;
